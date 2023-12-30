@@ -56,9 +56,14 @@
   font-weight: 400;
  }
 
+ main {
+  margin: 0 auto;
+ }
+
 .container {
-  width: 1110px;
+  max-width: 1140px;
   margin:0 auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -99,12 +104,13 @@
 body {
   background: #D8D8D6;
   color: #161616;
-  line-height: 1.64;
+  line-height: 1;
 }
 
 .amelia {
   gap: 30px;
   align-items: center;
+  padding-top: 20px;
 }
 
 .flex-element {
@@ -179,7 +185,7 @@ line-height: 1.64;
 }
 
 .adv-container {
-padding: 80px 0;
+padding: 80px 15px;
 display: flex;
 justify-content: space-between;
 }
@@ -283,4 +289,79 @@ justify-content: space-between;
 
 .ta-center {
   text-align: center;
+}
+
+
+/* !MEDIA */
+
+@media (max-width: 920px) {
+  .menu {
+    gap: 20px ;
+    font-size: 16px;
+  }
+  .am-img {
+    display: none;
+  }
+
+  .flex.buttons {
+    justify-content: center;
+  }
+
+  .h1-amelia {
+    text-align: center;
+  }
+  .amelia-desc {
+    padding: 15px 45px;
+  }
+  .adv-text {
+    font-size: 16px;
+  }
+
+  .how-img {
+    display: none;
+  }
+
+  .how-p {
+    max-width: 720px;
+  }
+  
+  .our-cardcont {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .our-card {
+    flex: none;
+    flex-shrink: 1;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 780px) {
+  .menu {
+    display: none;
+  }
+  .header-div {
+    justify-content: center;
+  }
+  .header-mg {
+    margin: 0;
+  }
+  .adv-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .advantage {
+    flex: 1 1 30%;
+    margin-top: 20px;
+  }
+
+  .flex.buttons {
+    flex-flow: column;
+    align-items: center;
+  }
 }
